@@ -12,8 +12,8 @@ phases:
     - apt-get install -y maven
   build:
     commands:
-    - echo building the justiceleague-tracker
-    - mvn install
+    - echo building the modified-tracker
+    
 artifacts:
   files:
   - target/*.jar
