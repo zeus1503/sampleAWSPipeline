@@ -2,7 +2,7 @@ version: 0.2
 
 env:
   variables:
-    JAVA_HOME: "/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.312.b07-1.amzn2.0.2.x86_64"
+    JAVA_HOME: "/usr/lib/jvm/jre-1.7.0-openjdk"
 
 phases:
   install:
@@ -13,6 +13,7 @@ phases:
   build:
     commands:
     - echo building the modified-tracker
+    - pwd
     - mvn -version
 artifacts:
   files:
