@@ -8,12 +8,12 @@ phases:
   install:
     commands:
     - echo installing maven...
-    - apt-get update -y
-    - apt-get install -y maven
+    - sudo apt-get update -y
+    - sudo apt-get install -y maven
   build:
     commands:
     - echo building the justiceleague-tracker
-    - mvn install
+    - sudo mvn install
 artifacts:
   files:
   - target/*.jar
